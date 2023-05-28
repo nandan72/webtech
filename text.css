@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(182, 140, 140);
+}
+
+.container {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    animation: text 4s infinite; /* Added duration for the animation */
+}
+
+@keyframes text {
+    0% {
+        font-size: 40pt;
+        color: black;
+    }
+    20% {
+        font-size: 50pt;
+        color: red;
+    }
+    40% {
+        font-size: 35pt;
+        color: rgb(248, 54, 54);
+    }
+    60% {
+        font-size: 15pt;
+        color: rgb(87, 73, 246);
+    }
+    80% {
+        font-size: 5pt;
+        color: blue;
+    }
+    100% {
+        font-size: 20pt;
+        color: black; /* Added default color at the end of animation */
+    }
+}
